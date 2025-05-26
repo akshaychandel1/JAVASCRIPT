@@ -8,6 +8,8 @@
 // object
 
 let age = 5;
-let name = akshay;
+// let name = akshay;
 console.log(typeof(age));
 
+console.log(typeof(null)); // null ka type object aa rha h 
+console.log(typeof(undefined));
