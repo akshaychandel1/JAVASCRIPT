@@ -35,5 +35,12 @@ console.log(url.replace('www.','https://'));
 let urlName = "akshay";
 console.log(urlName.includes('sha'))  //returns true ,false
 
-let urlName2 = "akshay-chandel-ji";
-console.log(urlName2.split('-'));   //"returns array"
+let urlName2 = new String ('akshay-chandel-ji');
+// console.log(urlName2.split('-'));   //"returns array"
+
+
+// let fun = function isBlank(input) {
+//     if (input.length == 0 ) {
+     
+//     }
+// }
