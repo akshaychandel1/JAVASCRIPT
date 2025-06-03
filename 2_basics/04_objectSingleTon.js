@@ -50,3 +50,12 @@ console.log(Object.entries(obj));   // gives every key value pair in array "[ [ 
 
 console.log(obj.hasOwnProperty('id')); // gives boolean Value if key is in the object or not
 
+///// Destructuring of Object /////
+let course = {
+    name:"js course",
+    price: "999",
+    author: "akshay"
+}
+
+const {author} = course;
+console.log(author);
