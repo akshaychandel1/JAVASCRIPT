@@ -38,6 +38,8 @@ function addone(num){
 }
 //  function is called before it is craeated
 
+
+// console.log(add2(5));   //we cannot use hoisting in case we are storing the function in the variable
 let add2 = function(num2) {
     return num2 + 2;
 }
