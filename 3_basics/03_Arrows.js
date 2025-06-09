@@ -27,7 +27,8 @@ let varFun = (num1,num2)=>{
 
 console.log(varFun(3,4));
 
-//implecet return function   no need to write return keyword
+//Implecet Return Function   no need to write return keyword
+
 // let add2 = (num1,num2) => num1 +num2;
 // no need to write return keyword
 let add2 = (num1,num2)=>(num1+num2)
