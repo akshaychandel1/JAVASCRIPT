@@ -12,12 +12,13 @@
 //     }    
 // }
 
-// break
+// break and continue
 
-for (let i = 0; i <= 20; i++) {
+for (let i = 0; i <= 10; i++) {
     if (i == 5) {
         console.log("5 is Detected");
-        break
+        // break
+        continue
     }
     console.log(`value of i = ${i}`);
 }
