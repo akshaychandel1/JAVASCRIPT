@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New DOM ADVANCE</title>
+</head>
+<body style="background-color: black; color:aliceblue;">
+    <ul class="language">
+        <li>
+            JavaScript
+        </li>
+    </ul>
+</body>
+<script>
+    function addLanguages(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector(".language").appendChild(li)
+    }
+    addLanguages('Python');
+    addLanguages('Node.js');
+
+
+    // More Optimised Way 
+    function addOptiLang(optiLang) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(optiLang))
+        document.querySelector(".language").appendChild(li)
+    }
+    addOptiLang('GO Lang')
+    addOptiLang('Python With Ml.js')
+    
+    // For Edit
+    const secLang = document.querySelector('li:nth-child(2)')
+    const replacedLi = document.createElement('li')
+    replacedLi.textContent = "Mojo"
+    secLang.replaceWith(replacedLi)
+
+    // Function For Edit 
+    function secondLANG(newlang) {
+        const firstLi = document.querySelector('li:nth-child(1)')
+        // replacingLang.outerHTML = "<li>TypeScript</li>"
+        const replacingLI = document.createElement('li')
+        replacingLI.appendChild(document.createTextNode(newlang))
+        firstLi.replaceWith(replacingLI);
+    }
+    secondLANG("TypeScript");
+</script>
+</html>
