@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AKSHAY CHANDEL</h1>
+    <button id="stop">Stop Button</button>
+</body>
+<script>
+    // console.log("Before setTimeOut");
+    // setTimeout(function(){
+    //     console.log('TimeOutFunction');
+    // },2000)
+    // console.log( "After setTimeOut" );
+
+    // By Refference 
+    const hi = function() {
+        console.log("hello");
+    }
+    setTimeout(hi,2000) //giving refference of the function not calling it if u call then it will run 
+    setTimeout(function () {
+        console.log("chup");     // this will run with the hi wont take 2 more after the first function of timeout 
+    },2000)    
+    
+    // setTimeout(hi,2000)
+
+    const changeH1= function() {
+        document.querySelector('h1').innerText='The Best Man In The World Is Akshay Chandel';
+    }
+    const clearTime = setTimeout(changeH1,2000);
+
+    document.querySelector('#stop').addEventListener('click', function() {
+        clearTimeout(clearTime)
+        console.log("stopped");
+        
+    })
+    
+</script>
+</html>
