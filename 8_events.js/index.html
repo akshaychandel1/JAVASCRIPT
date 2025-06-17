@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" class="button">Click Me</button>
+</body>
+<script>
+    document.getElementById('btn').addEventListener('click', function (e) {
+        // alert("button clicked")
+        // e.preventDefault();
+        console.log(e);
+        e.stopPropagation(); 
+
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'BUTTON') {
+            const removeConst = e.target.parentNode    
+            removeConst.remove();
+        }
+        
+    }, false )
+
+    
+</script>
+</html>
