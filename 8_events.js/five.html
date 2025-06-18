@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Key Stroke</title>
+</head>
+<body style="background-color: black; color: white;" id="body">
+    
+</body>
+<script>
+    const insert = document.querySelector('#body')
+    window.addEventListener('keydown', (e)=>{
+        insert.innerHTML = `
+        <table class="table-auto">
+  <tr>
+    <th>KEY</th>
+    <th>KEY CODE</th>
+    <th>CODE</th>
+  </tr>
+  <tr>
+    <td> ${e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+        `
+    })
+
+</script>
+</html>
