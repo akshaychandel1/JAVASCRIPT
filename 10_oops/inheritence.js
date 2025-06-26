@@ -18,6 +18,6 @@ class Teacher extends User{
         
     }
 }
-const newUser = Teacher("Kireedula Naresh", "naresh@3112@gmail.com", "123456");
+const newUser = new Teacher("Kireedula Naresh", "naresh@3112@gmail.com", "123456");
 console.log(newUser);
  
